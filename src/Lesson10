@@ -1,0 +1,58 @@
+VCS
+    Benefits
+        Backup and restore
+        Synchronization
+        Undo
+        Branch
+        Sandbox
+        Tracking and ownership
+    Mexanizm
+        lock - modify - unlock
+        copy - modify - merge
+    type
+        Centralize
+        Decentralize
+    Git
+        github -> add ssh
+        history
+            2015 Linus Torvalds
+        termin
+            local
+                working directory
+                staging or index
+                local repository
+            githun
+                remote repository
+        Command
+            ssh-keygen -0 - generation public/private key
+            local <--> remote connection:
+                git clone
+                git init
+            local command
+                git add . or git add fileName.fileExtension (add 1 or more file from working to index)
+                git commit -m "description" -> from index to local repository
+                git push from local to remote
+                git pull from remote to local
+            ignore file .gitignore file
+                *.logs (ignore -> logs extension
+                !fileName.logs -> except error.logs
+                /folderName -> if root contain folderName then ignore, if folderName contains test 3 folder then this folder pass remote   folder?????
+                folderName -> folderName named all folder ignore
+                l?sson.fileExtension -> ignore file named lesson lssson
+                folderName/ -> folderName named all folder ignore
+            log
+                commands
+                    TIG
+                    git logs
+            restore
+                 git checkout . or git checkout fileName.fileExtension or git restore . or git restore fileName.fileExtension -> restore from working directory
+                 git restore --staged . or git restore --staged fileName.fileExtension or git reset filaNeam.fileExtension or  git reset . -> from index to working directory
+                 git reset --soft HEAD^ -> from commit to index
+                 git reset --mixed HEAD^ -> from commit to working directory
+                 git reset --hard HEAD^ -> delete commit
+                 git revert 5symbol -> return before commit  after write git push
+            interface
+                gitk
+                git gui
+
+
