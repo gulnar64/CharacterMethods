@@ -36,7 +36,7 @@ VCS
             ignore file .gitignore file
                 *.logs (ignore -> logs extension
                 !fileName.logs -> except error.logs
-                /folderName -> if root contain folderName then ignore, if folderName contains test 3 folder then this folder pass remote   folder?????
+                /folderName -> if root contain folderName then ignore, if folderName contains test 3 folder then this folder pass remote
                 folderName -> folderName named all folder ignore
                 l?sson.fileExtension -> ignore file named lesson lssson
                 folderName/ -> folderName named all folder ignore
